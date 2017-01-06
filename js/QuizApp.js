@@ -207,7 +207,7 @@ mainAppValue.controller('FootballController', ['$scope','$http','$location','But
 			$scope.option2=json.category[0].football[0].options[j].option2;
 			$scope.option3=json.category[0].football[0].options[j].option3;
 			$scope.option4=json.category[0].football[0].options[j].option4;
-			$scope.radioValue = false;
+			$scope.radioValue1 = false;
 			j++;
 		}else{
 			ButtonValue.setButtonValue2(true);
@@ -239,7 +239,7 @@ mainAppValue.controller('PoliticsController', ['$scope','$http','$location','But
 			$scope.option2=json.category[0].General[0].options[k].option2;
 			$scope.option3=json.category[0].General[0].options[k].option3;
 			$scope.option4=json.category[0].General[0].options[k].option4;
-			$scope.radioValue = false;
+			$scope.radioValue2 = false;
 			k++;
 		}else{
 			ButtonValue.setButtonValue3(true);
