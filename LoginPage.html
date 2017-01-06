@@ -1,0 +1,50 @@
+<head>
+<title>Login Page</title>
+<style>
+.card
+{
+    padding-top: 20px;
+    background-color:#49a3df;
+	margin-top:15px;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	height:150px;
+}
+.image
+{
+	margin-top:170px;
+}
+
+#submitButton{
+	width: 120px;
+}
+</style>
+</head>
+<body>
+<div class="row" ng-controller="LoginController">
+<div>
+<img class="col-xs-offset-4 col-xs-4 image" ng-src="images\quiz.jpg"/> 
+</div>
+<div class="col-xs-offset-4 col-xs-4 card">
+	<form action=" " name="appForm" novalidate autocomplete="off">
+		<div class="name col-xs-15 form-group col-md-10" id="playerNameField">
+			<span class="glyphicon halflings-user"></span>
+			<input type="text" name="name" placeholder="Enter your Name" class="col-xs-offset-1 col-xs-15 form-control" ng-minlength="3" 
+			ng-model="playerName" ngRequired="true" ng-change="inputText()" /> 
+		</div>
+		<span ng-bind="errorMessage" style="margin-left: 65px;color: red;"></span>
+		<input type="button" name="submitButton" id="submitButton" value="Play" class="col-xs-offset-4 form-control" ng-click="submitButton()" />
+		
+	</form>
+</div>
+</div>
+</body>

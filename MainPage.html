@@ -1,0 +1,42 @@
+<div class="row">
+	<div class="col-xs-offset-3 col-xs-5 card"
+		style="margin-top: 150px !important;">
+		<h3 for="listofimages" class="col-md-offset-4 col-md-5"
+			style="margin-left: 138px;    margin-top: 10px;">Make a Choice</h3>
+		<div class="listofimages form-group col-xs-12"
+			style="margin-top: 25px;">
+			<div class="col-xs-4">
+				<img src="images/cricket.jpg" style="width: 110px; height: 100px;"
+					alt="I'm cricket" /> <br /> <br /> <a href="#/Cricket">
+					<button type="button" id="cricketsubmit" draggable="false"
+						class="btn btn-default form-control" ng-disabled="isDisabled1">
+						Lets Quiz</button>
+				</a>
+			</div>
+			<div class="col-xs-4">
+				<img src="images/Football.jpg" style="width: 110px; height: 100px;"
+					alt="I'm football" /> <br /> <br /> <a href="#/Football">
+					<button type="button" id="footballsubmit" draggable="false"
+						class="btn btn-default form-control" ng-disabled="isDisabled2">
+						Lets Quiz</button>
+				</a>
+			</div>
+			<div class="col-xs-4">
+				<img src="images/politics.jpg" style="width: 110px; height: 100px;"
+					alt="I'm politics" /> <br /> <br /> <a href="#/Politics">
+					<button type="button" id="politicssubmit" draggable="false"
+						class="btn btn-default form-control" ng-disabled="isDisabled3">
+						Lets Quiz</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-offset-4 col-xs-4 col-md-offset-5 col-md-2" ng-show="submitButton" style="margin-top: -44px;
+    margin-left: 455px;">
+		<a href="#/Result/">
+			<button type="button" id="finalSubmit" draggable="false"
+				class="btn btn-default form-control"
+				style="width: 130px">What's My Score</button>
+		</a>
+	</div>
+</div>

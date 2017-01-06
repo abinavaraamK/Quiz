@@ -1,0 +1,72 @@
+<head>
+<title>Result Page</title>
+<style>
+.card {
+	padding-top: 20px;
+	background-color: #49a3df;
+	margin-top: 15px;
+	border-top-width: 0;
+	border-bottom-width: 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 150px;
+}
+
+.imageStyle {
+	width: 120px;
+	height: 100px !important;
+}
+
+#resultInfo {
+	position: absolute;
+	top: 0px;
+	/*right: 485px; */
+}
+</style>
+</head>
+<button class="btn btn-primary col-md-offset-3 col-md-4" type="button"
+	id="resultInfo">
+	Hey &nbsp;&nbsp;
+	<span class="badge" id="nameSpan" ng-mouseover="getInfo()">&nbsp;{{name}}&nbsp;</span>
+	&nbsp;&nbsp;Your Score Card <span class="glyphicon glyphicon-menu-hamburger"></span>
+</button>
+<div class="row" style="margin-top: 55px !important; position: relative;">
+	<div class="col-xs-offset-3 col-md-6 card" ng-show="cricket">
+		<div class="col-xs-6 col-md-3 thumbnail">
+			<img src="images/cricket.jpg" class="imageStyle" alt="I'm cricket" />
+		</div>
+		<span ng-repeat="v in cricketScore track by $index"> <img
+			ng-src="{{v}}" alt="I'm cricket"
+			style="width: 70px; margin-top: 18px" />
+
+		</span>
+	</div>
+
+	<div class="col-xs-offset-3 col-md-6 card" ng-show="football">
+		<div class="col-xs-6 col-md-3 thumbnail">
+			<img src="images/Football.jpg" class="imageStyle" alt="I'm football" />
+		</div>
+		<span ng-repeat="v in footballScore track by $index"> <img
+			ng-src="{{v}}" alt="I'm footballScore"
+			style="width: 70px; margin-top: 25px" />
+
+		</span>
+	</div>
+
+	<div class="col-xs-offset-3 col-md-6 card" ng-show="politics">
+		<div class="col-xs-6 col-md-3 thumbnail">
+			<img src="images/politics.jpg" class="imageStyle" alt="I'm politics" />
+		</div>
+		<span ng-repeat="v in politicsScore track by $index"> <img
+			ng-src="{{v}}" alt="I'm politicsScore" style="width: 70px;" />
+
+		</span>
+	</div>
+</div>

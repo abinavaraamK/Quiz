@@ -1,0 +1,57 @@
+{
+    "answers": [
+        {
+            "cricket": [
+                {
+                    "one": "A"
+                },
+                {
+                    "one": "B"
+                },
+                {
+                    "one": "A"
+                },
+                {
+                    "one": "D"
+                },
+                {
+                    "one": "B"
+                }
+            ],
+            "general": [
+                {
+                    "two": "B"
+                },
+                {
+                    "two": "B"
+                },
+                {
+                    "two": "A"
+                },
+                {
+                    "two": "B"
+                },
+                {
+                    "two": "B"
+                }
+            ],
+            "football": [
+                {
+                    "three": "B"
+                },
+                {
+                    "three": "B"
+                },
+                {
+                    "three": "A"
+                },
+                {
+                    "three": "C"
+                },
+                {
+                    "three": "A"
+                }
+            ]
+        }
+    ]
+}

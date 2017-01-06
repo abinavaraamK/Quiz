@@ -1,0 +1,100 @@
+<head>
+<title>Quiz</title>
+<style>
+.card {
+	margin-top: 200px;
+	width: 700px;
+	height: 220px;
+	background-color: #ecf0f1;
+	border: 1px solid #7f8c8d;
+	border-top-width: 1px;;
+	border-bottom-width: 2px;
+	border-radius: 3px;
+	box-shadow: none;
+	box-sizing: border-box;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.questioncard {
+	/* background-color:#2980b9; */
+	margin-left: 5px;
+	margin-right: 5px;
+	/* background-color: #7f8c8d; */
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	border: 1px solid #7f8c8d;
+	border-top-width: 1px;;
+	border-bottom-width: 2px;
+	border-radius: 3px;
+	box-shadow: none;
+	box-sizing: border-box;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.button {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+#frontpage {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.question {
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.options {
+	margin-left: 5px;
+	padding: 5px;
+}
+
+#submit {
+	margin-top: 150px;
+}
+</style>
+</head>
+<div class="row" ng-controller="FootballController">
+	<div class="col-md-offset-3 col-md-offset-5 card" id="MainCard">
+		<h2 style="margin-left: 40px;">Guide</h2>
+		<ul style="margin-top: 40px;margin-left: 10px;">
+			<li>Questions are based on the chosen area of interest</li>
+			<li>Clicking on next will get you the question.</li>
+			<li>Enjoy Quizing</li>
+		</ul>
+	</div>
+	<div class="col-md-offset-3 col-md-offset-5 card" id="SecondCard"
+		ng-show="SecondCard">
+		<h4 id="header1" class="question">{{title}} Questions</h4>
+		<div id="question1" ng-bind="question1" class="questioncard"></div>
+		<div id="optiondiv1" class="radio1 options">
+			<form>
+				<input type="radio" value="A" ng-model="radioValue1" name="team" /><label
+					id="option1" ng-bind-html="option1"></label><br /> <input
+					type="radio" value="B" ng-model="radioValue1" name="team" /><label
+					id="option2" ng-bind-html="option2"></label><br /> <input
+					type="radio" value="C" ng-model="radioValue1" name="team" /><label
+					id="option3" ng-bind-html="option3"></label><br /> <input
+					type="radio" value="D" ng-model="radioValue1" name="team" /><label
+					id="option4" ng-bind-html="option4"></label>
+			</form>
+		</div>
+	</div>
+	<br />
+	<button type="button" id="next" class="col-xs-offset-6 col-xs-1 button"
+		ng-click="callNext()">Next</button>
+</div>

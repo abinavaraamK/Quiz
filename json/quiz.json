@@ -1,0 +1,165 @@
+{
+    "category": [
+        {
+            "cricket": [
+                {
+                    "questions": [
+						{
+							"question":"1.Against which match Sachin scored his 100th hundred"
+						},
+                        {
+                            "question": "2.At 1983 world cup how much is the score difference india beat west indies"
+                        },
+                        {
+                            "question": "3.Which country will host 2016–Cricket World Cup"
+                        },
+                        {
+                            "question": "4.Which country has won the ICC Twenty-20 World Cup Cricket played in May 2010 "
+                        },
+                        {
+                            "question": "5.The cricketer who became the brand Ambassador of ‘Indigo Nation’ is "
+                        }
+                    ],
+                    "options": [
+						{
+							"option1":"(A)Bangladesh",
+							"option2":"(B)Australia",
+							"option3":"(C)New Zeland",
+							"option4":"(D)South Africa"
+						},
+                        {
+                            "option1": "(A)52 runs",
+                            "option2": "(B)48 runs",
+                            "option3": "(C)47 runs",
+                            "option4": "(D)55 runs"
+                        },
+                        {
+                            "option1": "(A)India",
+                            "option2": "(B)Australia",
+                            "option3": "(C)New Zeland",
+                            "option4": "(D)Both B and C"
+                        },
+                        {
+                            "option1": "(A)South Africa",
+                            "option2": "(B)Australia",
+                            "option3": "(C)New Zeland",
+                            "option4": "(D)England"
+                        },
+                        {
+                            "option1": "(A)Sachin tendulkar",
+                            "option2": "(B)Anil Kumble",
+                            "option3": "(C)Ganguly",
+                            "option4": "(D)MS Dhoni"
+                        }
+                    ]
+                }
+            ],
+            "General": [
+                {
+                    "questions": [
+                        {
+                            "question": "1.UK city of Coventry honoured which leading Indian industrialist with its highest award Honorary Freeman on 1 October 2015"
+                        },
+                        {
+                            "question": "2.The first woman Governor of a state in free India was"
+                        },
+                        {
+                            "question": "3.Who was elected as the president of Board of Control for Cricket in India (BCCI) on 4 October 2015 after the demise of Jagmohan Dalmiya"
+                        },
+                        {
+                            "question": "4.In October 2015, which country / territory flag was raised at United Nations for the first time"
+                        },
+                        {
+                            "question": "5.Which country has been ranked number one in the recently launched ICC women’s team ranking"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "option1": "(A) Anil Ambani",
+                            "option2": "(B) Ratna Tata",
+                            "option3": "(C) Azim Premji",
+                            "option4": "(D) Sunil Bharti Mittal "
+                        },
+                        {
+                            "option1": "(A) Mrs. Indira Gandhi",
+                            "option2": "(B) Mrs. Vijaya Laxmi Pandit",
+                            "option3": "(C) Mrs. Sarojini Naidu",
+                            "option4": "(D) Mrs. Sucheta Kripalani"
+                        },
+                        {
+                            "option1": "(A) Shashank Manohar",
+                            "option2": "(B) Sunil Gavaskar",
+                            "option3": "(C) Sourav Ganguly",
+                            "option4": "(D) Sharad Pawar"
+                        },
+                        {
+                            "option1": "(A) Timor",
+                            "option2": "(B) Palestine",
+                            "option3": "(C) Sirya",
+                            "option4": "(D) Jordan"
+                        },
+                        {
+                            "option1": "(A) India",
+                            "option2": "(B) Australia",
+                            "option3": "(C) Bangladesh",
+                            "option4": "(D) South Africa"
+                        }
+                    ]
+                }
+            ],
+            "football": [
+                {
+                    "questions": [
+                        {
+                            "question": "1.Which English goalkeeper has kept 10 clean sheets in World Cup games"
+                        },
+                        {
+                            "question": "2.Which country won the first world cup in 1930"
+                        },
+                        {
+                            "question": "3.What record did German stiker Miroslav Klose break in Brazil"
+                        },
+                        {
+                            "question": "4.Which nation topped the charts for most goal attempts in the tournament"
+                        },
+                        {
+                            "question": "5.Who finished top goalscorer in the World Cup 2014v with a golden boot "
+                        }
+                    ],
+                    "options": [
+                        {
+                            "option1": "(A)Joe Hart",
+                            "option2": "(B)Peter Shilton",
+                            "option3": "(C)David James",
+                            "option4": "(D)Iker casilles"
+                        },
+                        {
+                            "option1": "(A)England",
+                            "option2": "(B)Uruguay",
+                            "option3": "(C)Brazil",
+                            "option4": "(D)Netherland"
+                        },
+                        {
+                            "option1": "(A)Top Scorer 16 Goals",
+                            "option2": "(B)Second Top Scorer 15 Goals",
+                            "option3": "(C)Hat trick Goal",
+                            "option4": "(D)A goal after 3 minutes"
+                        },
+                        {
+                            "option1": "(A)Uruguay",
+                            "option2": "(B)England",
+                            "option3": "(C)Brazil",
+                            "option4": "(D)Netherland"
+                        },
+                        {
+                            "option1": "(A)James Rodriguez ",
+                            "option2": "(B)David Villa",
+                            "option3": "(C)Thomas Müller",
+                            "option4": "(D)Fernando Torres"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
