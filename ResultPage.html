@@ -24,49 +24,69 @@
 	height: 100px !important;
 }
 
-#resultInfo {
+#welcomeBtn {
 	position: absolute;
 	top: 0px;
-	/*right: 485px; */
+	width: 100%;
+	right: 0;
+}
+
+.spanImage {
+	padding: 5px;
+}
+
+.Wcard {
+	margin-top: -149px;
+	height: 188px;
+	background-color: rgb(73, 163, 223);
+	margin-left: 56.333% !important;
+	padding-top: 10px;
 }
 </style>
 </head>
 <button class="btn btn-primary col-md-offset-3 col-md-4" type="button"
-	id="resultInfo">
-	Hey &nbsp;&nbsp;
-	<span class="badge" id="nameSpan" ng-mouseover="getInfo()">&nbsp;{{name}}&nbsp;</span>
-	&nbsp;&nbsp;Your Score Card <span class="glyphicon glyphicon-menu-hamburger"></span>
+	id="welcomeBtn">
+	Hey &nbsp;&nbsp; <span class="badge " id="nameSpan"
+		ng-mouseover="getInfo()">&nbsp;{{name}}&nbsp;</span> &nbsp;&nbsp;Your
+	Score Card <span class="glyphicon glyphicon-menu-hamburger"></span>
 </button>
-<div class="row" style="margin-top: 55px !important; position: relative;">
-	<div class="col-xs-offset-3 col-md-6 card" ng-show="cricket">
-		<div class="col-xs-6 col-md-3 thumbnail">
-			<img src="images/cricket.jpg" class="imageStyle" alt="I'm cricket" />
+<div class="row"
+	style="margin-top: 55px !important; position: relative;">
+	<div class="col-md-7">
+		<div class="col-md-11 card" ng-show="cricket" style="">
+			<div class="col-xs-6 col-md-3 thumbnail">
+				<img src="images/cricket.jpg" class="imageStyle" alt="I'm cricket" />
+			</div>
+			<span ng-repeat="v in cricketScore track by $index" class="spanImage">
+				<img ng-src="{{v}}" alt="I'm cricket"
+				style="width: 70px; margin-top: 18px"
+				ng-mouseover="getQueAns($index,'cricket')" />
+			</span>
 		</div>
-		<span ng-repeat="v in cricketScore track by $index"> <img
-			ng-src="{{v}}" alt="I'm cricket"
-			style="width: 70px; margin-top: 18px" />
-
-		</span>
+		<div class="col-md-11 card" ng-show="football"
+			style="margin-top:20px;">
+			<div class="col-xs-6 col-md-3 thumbnail">
+				<img src="images/Football.jpg" class="imageStyle" alt="I'm football" />
+			</div>
+			<span ng-repeat="v in footballScore track by $index"
+				class="spanImage"> <img ng-src="{{v}}"
+				alt="I'm footballScore" style="width: 70px; margin-top: 25px"
+				ng-mouseover="getQueAns($index,'football')" />
+			</span>
+		</div>
+		<div class="col-md-11 card" ng-show="politics"
+			style="margin-top:20px;">
+			<div class="col-xs-6 col-md-3 thumbnail">
+				<img src="images/politics.jpg" class="imageStyle" alt="I'm politics" />
+			</div>
+			<span ng-repeat="v in politicsScore track by $index"
+				class="spanImage"> <img ng-src="{{v}}"
+				alt="I'm politicsScore" style="width: 70px;"
+				ng-mouseover="getQueAns($index,'general')" />
+			</span>
+		</div>
 	</div>
-
-	<div class="col-xs-offset-3 col-md-6 card" ng-show="football">
-		<div class="col-xs-6 col-md-3 thumbnail">
-			<img src="images/Football.jpg" class="imageStyle" alt="I'm football" />
-		</div>
-		<span ng-repeat="v in footballScore track by $index"> <img
-			ng-src="{{v}}" alt="I'm footballScore"
-			style="width: 70px; margin-top: 25px" />
-
-		</span>
-	</div>
-
-	<div class="col-xs-offset-3 col-md-6 card" ng-show="politics">
-		<div class="col-xs-6 col-md-3 thumbnail">
-			<img src="images/politics.jpg" class="imageStyle" alt="I'm politics" />
-		</div>
-		<span ng-repeat="v in politicsScore track by $index"> <img
-			ng-src="{{v}}" alt="I'm politicsScore" style="width: 70px;" />
-
-		</span>
+	<div class="col-xs-offset-7 col-xs-6 Wcard" ng-show="showWrongQ">
+		<my-custom-dir> </my-custom-dir>
 	</div>
 </div>

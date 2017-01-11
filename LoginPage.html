@@ -27,6 +27,16 @@
 #submitButton{
 	width: 120px;
 }
+#userIcon{
+	margin-top	:	5px;	
+}
+.glyphicon{
+	right: -270px;
+	widht:15px;
+	height:15px;
+	color:rgba(30, 67, 210, 0.88);
+	top: 29px !important;
+}
 </style>
 </head>
 <body>
@@ -37,7 +47,7 @@
 <div class="col-xs-offset-4 col-xs-4 card">
 	<form action=" " name="appForm" novalidate autocomplete="off">
 		<div class="name col-xs-15 form-group col-md-10" id="playerNameField">
-			<span class="glyphicon halflings-user"></span>
+			<span class="glyphicon glyphicon-user"></span>
 			<input type="text" name="name" placeholder="Enter your Name" class="col-xs-offset-1 col-xs-15 form-control" ng-minlength="3" 
 			ng-model="playerName" ngRequired="true" ng-change="inputText()" /> 
 		</div>
