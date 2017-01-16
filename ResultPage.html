@@ -48,7 +48,8 @@
 	id="welcomeBtn">
 	Hey &nbsp;&nbsp; <span class="badge " id="nameSpan"
 		ng-mouseover="getInfo()">&nbsp;{{name}}&nbsp;</span> &nbsp;&nbsp;Your
-	Score Card <span class="glyphicon glyphicon-menu-hamburger"></span>
+	Score Card <span style="float: right;"
+		class="glyphicon glyphicon-repeat" ng-click="goToLogin()">&nbsp;Try Again</span>
 </button>
 <div class="row"
 	style="margin-top: 55px !important; position: relative;">
@@ -60,29 +61,29 @@
 			<span ng-repeat="v in cricketScore track by $index" class="spanImage">
 				<img ng-src="{{v}}" alt="I'm cricket"
 				style="width: 70px; margin-top: 18px"
-				ng-mouseover="getQueAns($index,'cricket')" />
+				ng-mouseover="getQueAns($index,'cricket')"  ng-mouseleave="removeQueAns()"/>
 			</span>
 		</div>
 		<div class="col-md-11 card" ng-show="football"
-			style="margin-top:20px;">
+			style="margin-top: 20px;">
 			<div class="col-xs-6 col-md-3 thumbnail">
 				<img src="images/Football.jpg" class="imageStyle" alt="I'm football" />
 			</div>
 			<span ng-repeat="v in footballScore track by $index"
 				class="spanImage"> <img ng-src="{{v}}"
 				alt="I'm footballScore" style="width: 70px; margin-top: 25px"
-				ng-mouseover="getQueAns($index,'football')" />
+				ng-mouseover="getQueAns($index,'football')" ng-mouseleave="removeQueAns()" />
 			</span>
 		</div>
 		<div class="col-md-11 card" ng-show="politics"
-			style="margin-top:20px;">
+			style="margin-top: 20px;">
 			<div class="col-xs-6 col-md-3 thumbnail">
 				<img src="images/politics.jpg" class="imageStyle" alt="I'm politics" />
 			</div>
 			<span ng-repeat="v in politicsScore track by $index"
 				class="spanImage"> <img ng-src="{{v}}"
 				alt="I'm politicsScore" style="width: 70px;"
-				ng-mouseover="getQueAns($index,'general')" />
+				ng-mouseover="getQueAns($index,'general')" ng-mouseleave="removeQueAns()"/>
 			</span>
 		</div>
 	</div>

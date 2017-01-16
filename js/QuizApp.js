@@ -125,10 +125,9 @@ mainAppValue
 				[
 						'$scope',
 						'ButtonValue',
-						function($scope, ButtonValue) {
+						'$location',
+						function($scope, ButtonValue,$location) {
 							$scope.isDisabled1 = ButtonValue.getButtonValue1();
-							console.log("value");
-							console.log($scope.isDisabled1);
 							$scope.isDisabled2 = ButtonValue.getButtonValue2();
 							$scope.isDisabled3 = ButtonValue.getButtonValue3();
 							if (($scope.isDisabled1 | $scope.isDisabled2 | $scope.isDisabled3) == true) {
@@ -139,7 +138,17 @@ mainAppValue
 							} else {
 								$scope.submitButton = false;
 							}
-						} ]);
+							$scope.showCricket = function(){
+								$location.path('/Cricket');
+							};
+							$scope.showPolitics = function(){
+								$location.path('/Politics');
+							};
+							$scope.showFootball = function(){
+								$location.path('/Football');
+							};
+						}
+						]);
 
 mainAppValue
 		.controller(
@@ -190,6 +199,7 @@ mainAppValue
 																.setButtonValue1(true);
 														$location.path('/Main');
 														console.log(quizJson);
+														i = 0;
 														return true;
 													}
 												};
@@ -238,6 +248,7 @@ mainAppValue
 														ButtonValue
 																.setButtonValue2(true);
 														$location.path('/Main');
+														j = 0;
 														return true;
 													}
 												};
@@ -286,6 +297,7 @@ mainAppValue
 														ButtonValue
 																.setButtonValue3(true);
 														$location.path('/Main');
+														k = 0;
 														return true;
 													}
 												};
@@ -298,8 +310,9 @@ mainAppValue
 						'$scope',
 						'shareName',
 						'$http',
+						'$location',
 						'ButtonValue',
-						function($scope, shareName, $http, ButtonValue) {
+						function($scope, shareName, $http,$location,ButtonValue) {
 							$scope.name = shareName.getPlayerName();
 							console.log($scope.name);
 							console.log("before splicing");
@@ -430,7 +443,33 @@ mainAppValue
 									$scope.showWrongQ = false;
 								}
 							};
-						} ]);
+							
+							$scope.removeQueAns = function(){
+								console.log("inside ngmouseLeave");
+								$scope.showWrongQ = false;
+							};
+							$scope.goToLogin = function() {
+								console.log("inside button click");
+								cricketAnswer = [];
+								footballAnswer = [];
+								politicsAnswer = [];
+								CAns = [];
+								wrongAnswerC = [];
+								FAns = [];
+								wrongAnswerF = [];
+								PAns = [];
+								wrongAnswerP = [];
+								console.log(cricketAnswer);
+								ButtonValue
+								.setButtonValue1(false);
+								ButtonValue
+								.setButtonValue2(false);
+								ButtonValue
+								.setButtonValue3(false);
+								$location.path('/Login');
+							};
+						}
+						]);
 
 mainAppValue.directive("myCustomDir", function() {
 
